@@ -58,7 +58,6 @@ class APIManager: NSObject {
             if isRawData == true {
                 parEncoding = JSONEncoding.default
             }
-            
             print("Encoding ==? \(parEncoding)")
             
             //For SSL
@@ -85,7 +84,6 @@ class APIManager: NSObject {
             self.failMessageSend(path: path, completionBlock: completionBlock, errorMsg: WebServiceCallErrorMessage.ErrorInternetConnectionNotAvailableMessage)
         }
     }
-    
     
     func responseSend(isSuccess : Bool, apiStatusCode : Int?, path : String, resultData : AnyObject?, param : Parameters?, completionBlock : ApiResponseHandler?) {
         var newIsSuccess : Bool = isSuccess

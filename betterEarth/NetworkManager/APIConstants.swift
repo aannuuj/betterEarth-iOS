@@ -13,17 +13,17 @@ typealias ApiResponseHandler = (_ success: Bool, _ result : JSON, _ responseCode
 
 class API_Model: NSObject {
     
-    var path        : String!
-    var newPath     : String!
-    var method      : HTTPMethod = .post
-    var isRawData   : Bool = true
-    var paramKey    : [String]?
+    var path: String!
+    var newPath: String!
+    var method: HTTPMethod = .post
+    var isRawData: Bool = true
+    var paramKey: [String]?
     
     init(path : String, httpMethod : HTTPMethod = .post, isRawData : Bool = true, param : [String]? = nil) {
-        self.path       = path
-        self.method     = httpMethod
-        self.isRawData  = isRawData
-        paramKey        = param
+        self.path = path
+        self.method = httpMethod
+        self.isRawData = isRawData
+        paramKey = param
     }
     
     func callAPI(param : Parameters?, paramStr : String? = nil, completion completionBlock: ApiResponseHandler? = nil) {
@@ -46,5 +46,3 @@ struct WebServiceCallErrorMessage {
     static let ErrorNoDataFoundMessage = "No Data Available"
     static let ErrorOccuredMessage = "Error occurred! Please try again"
 }
-
-
