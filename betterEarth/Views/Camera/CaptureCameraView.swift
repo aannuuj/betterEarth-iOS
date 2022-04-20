@@ -14,7 +14,7 @@ import Camera_SwiftUI
 struct CameraView: View {
     @StateObject var model = CameraModel()
     @State var currentZoomFactor: CGFloat = 1.0
-    
+    @StateObject var viewRouter: ViewRouter
     var body: some View {
         GeometryReader { reader in
             ZStack {
@@ -65,7 +65,7 @@ struct CameraView: View {
                             .repeatForever(autoreverses: false),
                         value: 1.0
                     )
-//                    .animation(.easeInOut)
+                //                    .animation(.easeInOut)
                 CameraUI
             }
         }
@@ -91,7 +91,9 @@ struct CameraView: View {
                     value: 1.0
                 )
             } else if model.photo != nil {
-                Button(action: {}) {
+                Button(action: {
+                    viewRouter.currentPage = .home
+                }) {
                     HStack(alignment: .center, spacing: 6) {
                         Text("Proceed")
                             .font(.BETitle)
@@ -104,11 +106,13 @@ struct CameraView: View {
                     .padding(.all, 16)
                     .background(Color.white)
                     .cornerRadius(24)
-                }.animation(
+                }
+                .animation(
                     .easeInOut(duration: 1)
                         .repeatForever(autoreverses: false),
                     value: 1.0
                 )
+                
             }
         }
     }
@@ -172,7 +176,7 @@ struct CameraView: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
-            .padding(.bottom, 120)
+            .padding(.bottom, 160)
         }
         .edgesIgnoringSafeArea(.all)
         .frame(width: UIScreen.main.bounds.width, height:  UIScreen.main.bounds.height, alignment: .center)
@@ -181,6 +185,6 @@ struct CameraView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        CameraView(viewRouter: ViewRouter())
     }
 }

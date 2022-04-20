@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecentActivity: Hashable, Identifiable {
     let id = UUID()
-//    let type: String
+    //    let type: String
     let imageName: String
     let productName: String
     let offsetted: Bool
@@ -43,13 +43,9 @@ struct HomeView: View {
                         VStack {
                             Image("homeActivity")
                                 .frame(width: UIScreen.main.bounds.width - 96, height: 350)
-//                            LazyVGrid(columns: threeColumnGrid) {
-//                                Text("Activity")
-//                            }
                         }
-                        // add activity insights view here
                     }
-                   
+                    
                     VStack(alignment: .center, spacing: 24) {
                         HStack {
                             Text("Activity")
@@ -65,11 +61,11 @@ struct HomeView: View {
                             }
                         }
                         .padding(24)
-                            //TODO:  get activity from viewModel
-                            ForEach(activity, id: \.self) { item in
-                                // pass the object here and handel it inside the cell
-                                RecentActivityCell(dataModel: item)
-                            }
+                        
+                        ForEach(activity, id: \.self) { item in
+                            // pass the object here and handel it inside the cell
+                            RecentActivityCell(dataModel: item)
+                        }
                         Spacer()
                     }
                     .background(Color.white)
@@ -78,8 +74,7 @@ struct HomeView: View {
                 .background(Color.gray.opacity(0.1))
             }
         }
-        }
-        
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
@@ -88,3 +83,4 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
+//TODO:  get activity from viewModel

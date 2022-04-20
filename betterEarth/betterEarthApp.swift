@@ -9,53 +9,114 @@ import SwiftUI
 
 @main
 struct betterEarthApp: App {
+    @StateObject var viewRouter = ViewRouter()
+    
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            TabBarView(viewRouter: viewRouter)
         }
     }
 }
 
 
 struct TabBarView: View {
-    @State private var selection = 1
+    
+    @StateObject var viewRouter: ViewRouter
+    
+    @State var showPopUp = false
+    
     var body: some View {
-        TabView(selection: $selection) {
-            HomeView()
-                .tabItem {
-                    Text("Home Tab")
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
+        GeometryReader { geometry in
+            VStack(spacing: 0) {
+                switch viewRouter.currentPage {
+                case .home:
+                    HomeView()
+                case .camera:
+                    CameraView(viewRouter: viewRouter)
+                case .compensate:
+                    CompensateViewController()
                 }
-                .tag(0)
-            CameraView()
-                .tabItem {
-                    Text("Camera Tab")
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                HStack {
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .home, iconName: "home")
+                    Spacer()
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .camera, iconName: "camera")
+                    Spacer()
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .compensate, iconName: "compensate")
                 }
-                .tag(1)
-                
-            CompensateViewController()
-                .tabItem {
-                    Text("Bookmark Tab")
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
-                }
-                .tag(2)
-        }
-        .accentColor(.BEGreen)
-        .onAppear() {
-            UITabBar.appearance().barTintColor = .white
+                .frame(width: geometry.size.width, height: 80)
+                .background(Color.black)
+                .cornerRadius(24, corners: [.topLeft, .topRight])
+            }
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
 
-// can this be enum?
+struct TabBarView_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarView(viewRouter: ViewRouter())
+    }
+}
 
-//struct TabBarItemView: View {
-//    @State private var selection : Int
-//    @State private var view : View
-//
+
+struct TabBarIcon: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    let assignedPage: Page
+    @State var iconName: String
+    let size: CGFloat = 36
+    
+    var body: some View {
+        VStack {
+            Image(iconName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: size, height: size)
+                .padding(.top, 10)
+        }
+        .padding(.horizontal, 30)
+        .onTapGesture {
+            viewRouter.currentPage = assignedPage
+        }
+        .foregroundColor(viewRouter.currentPage == assignedPage ? .white : .gray)
+    }
+}
+
+
+//struct TabBarView: View {
+//    @State private var selection = 1
 //    var body: some View {
-//        Text("Home Tab")
-//            .font(.system(size: 30, weight: .bold, design: .rounded))
+//        TabView(selection: $selection) {
+//            HomeView()
+//                .tabItem {
+//
+////                    Text("Home Tab")
+////                        .font(.system(size: 30, weight: .bold, design: .rounded))
+//                }
+//                .tag(0)
+//            CameraView()
+//                .tabItem {
+////                    Text("Camera Tab")
+////                        .font(.system(size: 30, weight: .bold, design: .rounded))
+//                }
+//                .tag(1)
+//
+//            CompensateViewController()
+//                .tabItem {
+//                    Text("compensate")
+//                        .font(.system(size: 30, weight: .bold, design: .rounded))
+//                }
+//                .tag(2)
+//        }
+//        .cornerRadius(12)
+//        .accentColor(.BEGreen)
+//        .onAppear() {
+//            UITabBar.appearance().barTintColor = .white
+//        }
 //    }
 //}
+
+
+
+
+
