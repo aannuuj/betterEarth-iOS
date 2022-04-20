@@ -65,7 +65,6 @@ struct CameraView: View {
                             .repeatForever(autoreverses: false),
                         value: 1.0
                     )
-                //                    .animation(.easeInOut)
                 CameraUI
             }
         }

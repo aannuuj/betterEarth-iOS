@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		581AEAB727EF086D0030F1A8 /* SwiftUICam in Frameworks */ = {isa = PBXBuildFile; productRef = 581AEAB627EF086D0030F1A8 /* SwiftUICam */; };
 		581AEABA27EF08840030F1A8 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 581AEAB927EF08840030F1A8 /* SwiftyJSON */; };
-		589E1DFF27F371530017DD0D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E1DFE27F371530017DD0D /* CameraView.swift */; };
 		58A0159E281018ED00E8D439 /* RouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A0159D281018ED00E8D439 /* RouterModel.swift */; };
+		58A015A02810202000E8D439 /* TabBarIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A0159F2810202000E8D439 /* TabBarIconView.swift */; };
+		58A015A32810205900E8D439 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A015A22810205900E8D439 /* TabBarView.swift */; };
+		58A015A6281022F200E8D439 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 58A015A5281022F200E8D439 /* SDWebImageSwiftUI */; };
+		58A015A8281024DA00E8D439 /* AnalyticsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A015A7281024DA00E8D439 /* AnalyticsSubView.swift */; };
+		58A015AA281024FF00E8D439 /* ActivitySubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A015A9281024FF00E8D439 /* ActivitySubView.swift */; };
 		58AC39F327F88156009D0C8A /* CompensateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC39F227F88156009D0C8A /* CompensateViewController.swift */; };
 		58AC39F527F881FF009D0C8A /* ProjectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC39F427F881FF009D0C8A /* ProjectCellView.swift */; };
 		58C088A32805F1C800F5B68D /* CaptureCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C088A22805F1C800F5B68D /* CaptureCameraView.swift */; };
@@ -38,8 +42,11 @@
 /* Begin PBXFileReference section */
 		115C072C7A2B92DAF4651ECA /* Pods_betterEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B18773D1DCC6077330ADD7A /* Pods-betterEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterEarth.debug.xcconfig"; path = "Target Support Files/Pods-betterEarth/Pods-betterEarth.debug.xcconfig"; sourceTree = "<group>"; };
-		589E1DFE27F371530017DD0D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		58A0159D281018ED00E8D439 /* RouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterModel.swift; sourceTree = "<group>"; };
+		58A0159F2810202000E8D439 /* TabBarIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIconView.swift; sourceTree = "<group>"; };
+		58A015A22810205900E8D439 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		58A015A7281024DA00E8D439 /* AnalyticsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSubView.swift; sourceTree = "<group>"; };
+		58A015A9281024FF00E8D439 /* ActivitySubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySubView.swift; sourceTree = "<group>"; };
 		58AC39F227F88156009D0C8A /* CompensateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompensateViewController.swift; sourceTree = "<group>"; };
 		58AC39F427F881FF009D0C8A /* ProjectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellView.swift; sourceTree = "<group>"; };
 		58C088A22805F1C800F5B68D /* CaptureCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraView.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A015A6281022F200E8D439 /* SDWebImageSwiftUI in Frameworks */,
 				581AEABA27EF08840030F1A8 /* SwiftyJSON in Frameworks */,
 				58C088A62805F20000F5B68D /* Camera-SwiftUI in Frameworks */,
 				581AEAB727EF086D0030F1A8 /* SwiftUICam in Frameworks */,
@@ -79,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58A015A12810203E00E8D439 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				58A0159F2810202000E8D439 /* TabBarIconView.swift */,
+				58A015A22810205900E8D439 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		58AC39F127F88137009D0C8A /* Compensate */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +109,8 @@
 		58C088A72805F39E00F5B68D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				58C088A82805F3AB00F5B68D /* CameraModel.swift */,
 				58C088AA2805F42D00F5B68D /* HomeModel.swift */,
+				58C088A82805F3AB00F5B68D /* CameraModel.swift */,
 				58A0159D281018ED00E8D439 /* RouterModel.swift */,
 			);
 			path = Models;
@@ -102,7 +119,6 @@
 		58C088AC2805F44100F5B68D /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				589E1DFE27F371530017DD0D /* CameraView.swift */,
 				58C088A22805F1C800F5B68D /* CaptureCameraView.swift */,
 			);
 			path = Camera;
@@ -210,6 +226,7 @@
 				58AC39F127F88137009D0C8A /* Compensate */,
 				BF76957227931E6100AF4997 /* Home */,
 				58C088AC2805F44100F5B68D /* Camera */,
+				58A015A12810203E00E8D439 /* TabBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +237,8 @@
 				58D5633327EF109F00EA2B6D /* RecentActivityCell.swift */,
 				BF7695422793062300AF4997 /* ContentView.swift */,
 				58D5633727EF148200EA2B6D /* HomeHeaderNoteCell.swift */,
+				58A015A7281024DA00E8D439 /* AnalyticsSubView.swift */,
+				58A015A9281024FF00E8D439 /* ActivitySubView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +265,7 @@
 				581AEAB627EF086D0030F1A8 /* SwiftUICam */,
 				581AEAB927EF08840030F1A8 /* SwiftyJSON */,
 				58C088A52805F20000F5B68D /* Camera-SwiftUI */,
+				58A015A5281022F200E8D439 /* SDWebImageSwiftUI */,
 			);
 			productName = betterEarth;
 			productReference = BF76953D2793062300AF4997 /* betterEarth.app */;
@@ -279,6 +299,7 @@
 				581AEAB527EF086D0030F1A8 /* XCRemoteSwiftPackageReference "SwiftUICam" */,
 				581AEAB827EF08840030F1A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				58C088A42805F20000F5B68D /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
+				58A015A4281022F200E8D439 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = BF76953E2793062300AF4997 /* Products */;
 			projectDirPath = "";
@@ -353,10 +374,12 @@
 				BF769562279310AD00AF4997 /* Extension.swift in Sources */,
 				BF7695512793077500AF4997 /* APIManager.swift in Sources */,
 				58C088AB2805F42D00F5B68D /* HomeModel.swift in Sources */,
+				58A015A02810202000E8D439 /* TabBarIconView.swift in Sources */,
 				58C088A32805F1C800F5B68D /* CaptureCameraView.swift in Sources */,
 				BF769558279308E300AF4997 /* Environment.swift in Sources */,
 				BF7695432793062300AF4997 /* ContentView.swift in Sources */,
 				BF76955E27930AF000AF4997 /* UserDefaultsManager.swift in Sources */,
+				58A015AA281024FF00E8D439 /* ActivitySubView.swift in Sources */,
 				58C088AE2806969200F5B68D /* PaymentsView.swift in Sources */,
 				58C088A92805F3AB00F5B68D /* CameraModel.swift in Sources */,
 				58AC39F327F88156009D0C8A /* CompensateViewController.swift in Sources */,
@@ -364,8 +387,9 @@
 				BF7695412793062300AF4997 /* betterEarthApp.swift in Sources */,
 				BF76956027930F2C00AF4997 /* ViewModel.swift in Sources */,
 				58AC39F527F881FF009D0C8A /* ProjectCellView.swift in Sources */,
-				589E1DFF27F371530017DD0D /* CameraView.swift in Sources */,
 				BF76954F279306F300AF4997 /* APIConstants.swift in Sources */,
+				58A015A32810205900E8D439 /* TabBarView.swift in Sources */,
+				58A015A8281024DA00E8D439 /* AnalyticsSubView.swift in Sources */,
 				58A0159E281018ED00E8D439 /* RouterModel.swift in Sources */,
 				58D5633427EF109F00EA2B6D /* RecentActivityCell.swift in Sources */,
 				BF769571279317B100AF4997 /* Endpoints.swift in Sources */,
@@ -601,6 +625,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		58A015A4281022F200E8D439 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		58C088A42805F20000F5B68D /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
@@ -621,6 +653,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 581AEAB827EF08840030F1A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		58A015A5281022F200E8D439 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58A015A4281022F200E8D439 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		58C088A52805F20000F5B68D /* Camera-SwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
