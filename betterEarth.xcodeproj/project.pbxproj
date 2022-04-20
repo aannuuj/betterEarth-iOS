@@ -7,25 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581AEAB727EF086D0030F1A8 /* SwiftUICam in Frameworks */ = {isa = PBXBuildFile; productRef = 581AEAB627EF086D0030F1A8 /* SwiftUICam */; };
+		581AEABA27EF08840030F1A8 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 581AEAB927EF08840030F1A8 /* SwiftyJSON */; };
+		589E1DFF27F371530017DD0D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E1DFE27F371530017DD0D /* CameraView.swift */; };
+		58A0159E281018ED00E8D439 /* RouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A0159D281018ED00E8D439 /* RouterModel.swift */; };
+		58AC39F327F88156009D0C8A /* CompensateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC39F227F88156009D0C8A /* CompensateViewController.swift */; };
+		58AC39F527F881FF009D0C8A /* ProjectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC39F427F881FF009D0C8A /* ProjectCellView.swift */; };
+		58C088A32805F1C800F5B68D /* CaptureCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C088A22805F1C800F5B68D /* CaptureCameraView.swift */; };
+		58C088A62805F20000F5B68D /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 58C088A52805F20000F5B68D /* Camera-SwiftUI */; };
+		58C088A92805F3AB00F5B68D /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C088A82805F3AB00F5B68D /* CameraModel.swift */; };
+		58C088AB2805F42D00F5B68D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C088AA2805F42D00F5B68D /* HomeModel.swift */; };
+		58C088AE2806969200F5B68D /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C088AD2806969200F5B68D /* PaymentsView.swift */; };
+		58D5633427EF109F00EA2B6D /* RecentActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5633327EF109F00EA2B6D /* RecentActivityCell.swift */; };
+		58D5633627EF13D800EA2B6D /* FontAndColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5633527EF13D800EA2B6D /* FontAndColorExtension.swift */; };
+		58D5633827EF148200EA2B6D /* HomeHeaderNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5633727EF148200EA2B6D /* HomeHeaderNoteCell.swift */; };
 		BF7695412793062300AF4997 /* betterEarthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7695402793062300AF4997 /* betterEarthApp.swift */; };
 		BF7695432793062300AF4997 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7695422793062300AF4997 /* ContentView.swift */; };
 		BF7695452793062500AF4997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7695442793062500AF4997 /* Assets.xcassets */; };
 		BF7695482793062500AF4997 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7695472793062500AF4997 /* Preview Assets.xcassets */; };
 		BF76954F279306F300AF4997 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF76954E279306F300AF4997 /* APIConstants.swift */; };
 		BF7695512793077500AF4997 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7695502793077500AF4997 /* APIManager.swift */; };
-		BF7695542793081400AF4997 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BF7695532793081400AF4997 /* Alamofire */; };
 		BF7695562793082100AF4997 /* Reachablity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7695552793082100AF4997 /* Reachablity.swift */; };
 		BF769558279308E300AF4997 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF769557279308E300AF4997 /* Environment.swift */; };
-		BF76955B2793097700AF4997 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = BF76955A2793097700AF4997 /* SwiftyJSON */; };
 		BF76955E27930AF000AF4997 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF76955D27930AF000AF4997 /* UserDefaultsManager.swift */; };
 		BF76956027930F2C00AF4997 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF76955F27930F2C00AF4997 /* ViewModel.swift */; };
 		BF769562279310AD00AF4997 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF769561279310AD00AF4997 /* Extension.swift */; };
-		BF7695682793150C00AF4997 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7695672793150C00AF4997 /* HomeModel.swift */; };
 		BF769571279317B100AF4997 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF769570279317B100AF4997 /* Endpoints.swift */; };
-		BF76957427931E7800AF4997 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF76957327931E7800AF4997 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115C072C7A2B92DAF4651ECA /* Pods_betterEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B18773D1DCC6077330ADD7A /* Pods-betterEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterEarth.debug.xcconfig"; path = "Target Support Files/Pods-betterEarth/Pods-betterEarth.debug.xcconfig"; sourceTree = "<group>"; };
+		589E1DFE27F371530017DD0D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		58A0159D281018ED00E8D439 /* RouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterModel.swift; sourceTree = "<group>"; };
+		58AC39F227F88156009D0C8A /* CompensateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompensateViewController.swift; sourceTree = "<group>"; };
+		58AC39F427F881FF009D0C8A /* ProjectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellView.swift; sourceTree = "<group>"; };
+		58C088A22805F1C800F5B68D /* CaptureCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraView.swift; sourceTree = "<group>"; };
+		58C088A82805F3AB00F5B68D /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		58C088AA2805F42D00F5B68D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		58C088AD2806969200F5B68D /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		58D5633327EF109F00EA2B6D /* RecentActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityCell.swift; sourceTree = "<group>"; };
+		58D5633527EF13D800EA2B6D /* FontAndColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAndColorExtension.swift; sourceTree = "<group>"; };
+		58D5633727EF148200EA2B6D /* HomeHeaderNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderNoteCell.swift; sourceTree = "<group>"; };
 		BF76953D2793062300AF4997 /* betterEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7695402793062300AF4997 /* betterEarthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betterEarthApp.swift; sourceTree = "<group>"; };
 		BF7695422793062300AF4997 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,9 +61,8 @@
 		BF76955D27930AF000AF4997 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		BF76955F27930F2C00AF4997 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BF769561279310AD00AF4997 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		BF7695672793150C00AF4997 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		BF769570279317B100AF4997 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		BF76957327931E7800AF4997 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C2CBAC8536BB92B73E206F06 /* Pods-betterEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterEarth.release.xcconfig"; path = "Target Support Files/Pods-betterEarth/Pods-betterEarth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,19 +70,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF76955B2793097700AF4997 /* SwiftyJSON in Frameworks */,
-				BF7695542793081400AF4997 /* Alamofire in Frameworks */,
+				581AEABA27EF08840030F1A8 /* SwiftyJSON in Frameworks */,
+				58C088A62805F20000F5B68D /* Camera-SwiftUI in Frameworks */,
+				581AEAB727EF086D0030F1A8 /* SwiftUICam in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58AC39F127F88137009D0C8A /* Compensate */ = {
+			isa = PBXGroup;
+			children = (
+				58AC39F227F88156009D0C8A /* CompensateViewController.swift */,
+				58AC39F427F881FF009D0C8A /* ProjectCellView.swift */,
+				58C088AD2806969200F5B68D /* PaymentsView.swift */,
+			);
+			path = Compensate;
+			sourceTree = "<group>";
+		};
+		58C088A72805F39E00F5B68D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58C088A82805F3AB00F5B68D /* CameraModel.swift */,
+				58C088AA2805F42D00F5B68D /* HomeModel.swift */,
+				58A0159D281018ED00E8D439 /* RouterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58C088AC2805F44100F5B68D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				589E1DFE27F371530017DD0D /* CameraView.swift */,
+				58C088A22805F1C800F5B68D /* CaptureCameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		8E95DF6D7C80BFDFA6E9C82F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				115C072C7A2B92DAF4651ECA /* Pods_betterEarth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF9EAD87348576F2A85D7FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B18773D1DCC6077330ADD7A /* Pods-betterEarth.debug.xcconfig */,
+				C2CBAC8536BB92B73E206F06 /* Pods-betterEarth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF7695342793062300AF4997 = {
 			isa = PBXGroup;
 			children = (
 				BF76953F2793062300AF4997 /* betterEarth */,
 				BF76953E2793062300AF4997 /* Products */,
+				AF9EAD87348576F2A85D7FF9 /* Pods */,
+				8E95DF6D7C80BFDFA6E9C82F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,10 +146,9 @@
 		BF76953F2793062300AF4997 /* betterEarth */ = {
 			isa = PBXGroup;
 			children = (
-				BF76956F279315E200AF4997 /* Constants */,
-				BF76955C27930AD500AF4997 /* NetworkManager */,
-				BF7695692793151200AF4997 /* Model */,
 				BF7695402793062300AF4997 /* betterEarthApp.swift */,
+				58C088A72805F39E00F5B68D /* Models */,
+				BF76955C27930AD500AF4997 /* NetworkManager */,
 				BF76956E279315BC00AF4997 /* Views */,
 				BF769565279314E100AF4997 /* ViewModel */,
 				BF7695632793132F00AF4997 /* UserDefaultsManager */,
@@ -121,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				BF769561279310AD00AF4997 /* Extension.swift */,
+				58D5633527EF13D800EA2B6D /* FontAndColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -133,43 +204,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BF769566279314F700AF4997 /* ResponseModel */ = {
-			isa = PBXGroup;
-			children = (
-				BF7695672793150C00AF4997 /* HomeModel.swift */,
-			);
-			name = ResponseModel;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		BF7695692793151200AF4997 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BF769566279314F700AF4997 /* ResponseModel */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		BF76956E279315BC00AF4997 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				58AC39F127F88137009D0C8A /* Compensate */,
 				BF76957227931E6100AF4997 /* Home */,
-				BF7695422793062300AF4997 /* ContentView.swift */,
+				58C088AC2805F44100F5B68D /* Camera */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		BF76956F279315E200AF4997 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		BF76957227931E6100AF4997 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BF76957327931E7800AF4997 /* HomeViewController.swift */,
+				58D5633327EF109F00EA2B6D /* RecentActivityCell.swift */,
+				BF7695422793062300AF4997 /* ContentView.swift */,
+				58D5633727EF148200EA2B6D /* HomeHeaderNoteCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -181,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF76954B2793062500AF4997 /* Build configuration list for PBXNativeTarget "betterEarth" */;
 			buildPhases = (
+				570E040360AC1267A936BB3C /* [CP] Check Pods Manifest.lock */,
 				BF7695392793062300AF4997 /* Sources */,
 				BF76953A2793062300AF4997 /* Frameworks */,
 				BF76953B2793062300AF4997 /* Resources */,
+				A22D0A4D34A031E242C3EBDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,8 +243,9 @@
 			);
 			name = betterEarth;
 			packageProductDependencies = (
-				BF7695532793081400AF4997 /* Alamofire */,
-				BF76955A2793097700AF4997 /* SwiftyJSON */,
+				581AEAB627EF086D0030F1A8 /* SwiftUICam */,
+				581AEAB927EF08840030F1A8 /* SwiftyJSON */,
+				58C088A52805F20000F5B68D /* Camera-SwiftUI */,
 			);
 			productName = betterEarth;
 			productReference = BF76953D2793062300AF4997 /* betterEarth.app */;
@@ -223,8 +276,9 @@
 			);
 			mainGroup = BF7695342793062300AF4997;
 			packageReferences = (
-				BF7695522793081400AF4997 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BF7695592793097700AF4997 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				581AEAB527EF086D0030F1A8 /* XCRemoteSwiftPackageReference "SwiftUICam" */,
+				581AEAB827EF08840030F1A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				58C088A42805F20000F5B68D /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
 			);
 			productRefGroup = BF76953E2793062300AF4997 /* Products */;
 			projectDirPath = "";
@@ -247,23 +301,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		570E040360AC1267A936BB3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-betterEarth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22D0A4D34A031E242C3EBDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-betterEarth/Pods-betterEarth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-betterEarth/Pods-betterEarth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-betterEarth/Pods-betterEarth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF7695392793062300AF4997 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D5633827EF148200EA2B6D /* HomeHeaderNoteCell.swift in Sources */,
+				58D5633627EF13D800EA2B6D /* FontAndColorExtension.swift in Sources */,
 				BF769562279310AD00AF4997 /* Extension.swift in Sources */,
 				BF7695512793077500AF4997 /* APIManager.swift in Sources */,
+				58C088AB2805F42D00F5B68D /* HomeModel.swift in Sources */,
+				58C088A32805F1C800F5B68D /* CaptureCameraView.swift in Sources */,
 				BF769558279308E300AF4997 /* Environment.swift in Sources */,
 				BF7695432793062300AF4997 /* ContentView.swift in Sources */,
 				BF76955E27930AF000AF4997 /* UserDefaultsManager.swift in Sources */,
+				58C088AE2806969200F5B68D /* PaymentsView.swift in Sources */,
+				58C088A92805F3AB00F5B68D /* CameraModel.swift in Sources */,
+				58AC39F327F88156009D0C8A /* CompensateViewController.swift in Sources */,
 				BF7695562793082100AF4997 /* Reachablity.swift in Sources */,
 				BF7695412793062300AF4997 /* betterEarthApp.swift in Sources */,
 				BF76956027930F2C00AF4997 /* ViewModel.swift in Sources */,
-				BF7695682793150C00AF4997 /* HomeModel.swift in Sources */,
+				58AC39F527F881FF009D0C8A /* ProjectCellView.swift in Sources */,
+				589E1DFF27F371530017DD0D /* CameraView.swift in Sources */,
 				BF76954F279306F300AF4997 /* APIConstants.swift in Sources */,
+				58A0159E281018ED00E8D439 /* RouterModel.swift in Sources */,
+				58D5633427EF109F00EA2B6D /* RecentActivityCell.swift in Sources */,
 				BF769571279317B100AF4997 /* Endpoints.swift in Sources */,
-				BF76957427931E7800AF4997 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -388,20 +493,26 @@
 		};
 		BF76954C2793062500AF4997 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B18773D1DCC6077330ADD7A /* Pods-betterEarth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betterEarth/Preview Content\"";
+				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture the product you use";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"To Record Audio With Video\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To Count the carbon footprint";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,20 +528,26 @@
 		};
 		BF76954D2793062500AF4997 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CBAC8536BB92B73E206F06 /* Pods-betterEarth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betterEarth/Preview Content\"";
+				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture the product you use";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"To Record Audio With Video\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To Count the carbon footprint";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,15 +585,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BF7695522793081400AF4997 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		581AEAB527EF086D0030F1A8 /* XCRemoteSwiftPackageReference "SwiftUICam" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/pierreveron/SwiftUICam";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.5.0;
+				branch = master;
+				kind = branch;
 			};
 		};
-		BF7695592793097700AF4997 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		581AEAB827EF08840030F1A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
@@ -484,18 +601,31 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		58C088A42805F20000F5B68D /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF7695532793081400AF4997 /* Alamofire */ = {
+		581AEAB627EF086D0030F1A8 /* SwiftUICam */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BF7695522793081400AF4997 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 581AEAB527EF086D0030F1A8 /* XCRemoteSwiftPackageReference "SwiftUICam" */;
+			productName = SwiftUICam;
 		};
-		BF76955A2793097700AF4997 /* SwiftyJSON */ = {
+		581AEAB927EF08840030F1A8 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BF7695592793097700AF4997 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 581AEAB827EF08840030F1A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		58C088A52805F20000F5B68D /* Camera-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58C088A42805F20000F5B68D /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */;
+			productName = "Camera-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

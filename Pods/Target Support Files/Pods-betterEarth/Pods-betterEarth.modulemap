@@ -1,0 +1,6 @@
+framework module Pods_betterEarth {
+  umbrella header "Pods-betterEarth-umbrella.h"
+
+  export *
+  module * { export * }
+}

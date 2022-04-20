@@ -5,9 +5,9 @@
 //  Created by Hariom on 15/01/22.
 //
 
-import Foundation
 import UIKit
 import SwiftyJSON
+import SwiftUI
 
 extension UIImage {
 
@@ -87,5 +87,21 @@ public func getDataFrom(JSON json: JSON) -> Data? {
         return try json.rawData(options: .prettyPrinted)
     } catch _ {
         return nil
+    }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
     }
 }

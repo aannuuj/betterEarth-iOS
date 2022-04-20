@@ -15,7 +15,7 @@ class viewModel: ObservableObject {
     
     @Published var featuredImage: UIImage?
     var responseImageURL = String()
-    var homeData = [HomeModel]()
+//    var homeData = [HomeModel]()
     
     func endImage_upload() {
         let image : UIImage = featuredImage!
@@ -47,10 +47,10 @@ class viewModel: ObservableObject {
                 let jsonData = getDataFrom(JSON: payload)
                 if let data = jsonData {
                     do {
-                        let decodedResponse = try JSONDecoder().decode([HomeModel].self, from: data)
-                        DispatchQueue.main.async {
-                            self.homeData = decodedResponse
-                        }
+//                        let decodedResponse = try JSONDecoder().decode([HomeModel].self, from: data)
+//                        DispatchQueue.main.async {
+//                            self.homeData = decodedResponse
+//                        }
                         return
                     } catch let jsonError as NSError {
                         print("JSON decode failed: \(jsonError.localizedDescription)")
