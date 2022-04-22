@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct ProjectCellView: View {
+    let dataModel: ProjectModel
     var body: some View {
         HStack{
-            Image("redbull")
+            Image(dataModel.imageName)
                  .resizable()
                  .aspectRatio(contentMode: .fill)
                  .frame(width: 85, height: 85)
                  .cornerRadius(6)
             VStack(alignment: .leading, spacing: 4){
-                Text("Gandhi")
+                Text(dataModel.projectName)
                     .font(.Label)
                     .foregroundColor(.black)
                     .lineLimit(1)
-                Text("India")
+                Text(dataModel.place)
                     .font(.subHeader)
                     .foregroundColor(.BEGrey.opacity(0.6))
                     .padding(.bottom, 8)
-                Text("$10/t.CO2")
+                Text("$\(dataModel.carbonValue)/t.CO2")
                     .font(.Label)
                     .foregroundColor(.BEGrey)
                     .lineLimit(1)
@@ -33,8 +34,10 @@ struct ProjectCellView: View {
     }
 }
 
-struct ProjectCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProjectCellView()
-    }
+struct ProjectModel: Hashable, Identifiable {
+    let id = UUID()
+    let imageName: String
+    let projectName: String
+    let place: String
+    let carbonValue: String
 }
